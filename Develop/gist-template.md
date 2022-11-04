@@ -4,7 +4,10 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex, short for regular expression, is a string that lets you create patterns to help locate, manage, and match text. 
+
+An example is this email matching regex.
+```(/[w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/)```
 
 ## Table of Contents
 
