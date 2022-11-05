@@ -69,6 +69,19 @@ x(yz){2,5}  matches a string that has x followed by 2 up to 5 copies of the sequ
 
 ### OR Operator
 
+OR Operators (Alternation Operator) matches on of a choice of regular expressions: if you put the character(s) representing the alternation operator between any two characters in the regular expression, the result matches the union of the strings that those two characters match.
+
+Examples of OR Operators are as follows:
+
+* `(|)` - matches a string that has any anterior characters followed by the characters on the left or right of the vertical bar
+* `[]` - matches a string that has any anterior characters without any characters within the brackets
+* Examples: 
+```
+x(y|z)  matches a string that has x followed by y or z (and captures y or z)
+x[yz]   matches a string that has x, but without capturing b or c
+```
+
+
 ### Character Classes
 
 Character Classes (Character Set) tells the regex engine to match only one out serveral specific characters, such as digits, words, or whitespace.
