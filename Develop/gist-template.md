@@ -52,6 +52,20 @@ goodbye         matches any string that has the exact text `goodbye` in it
 
 ### Character Classes
 
+Character Classes (Character Set) tells the regex engine to match only one out serveral specific characters, such as digits, words, or whitespace.
+
+Examples of Character Classes are as follows:
+
+```
+\d    matches a single any digit 0-9
+\w    matches a single any character that is a-z
+\s    matches ` `
+.     matches any character
+\D    matches a single non-digit character
+\W    matches a single any non-character that is a-z
+\S    matches a single non-` `
+```
+
 ### Flags
 
 ### Grouping and Capturing
