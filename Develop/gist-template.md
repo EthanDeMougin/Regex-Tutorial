@@ -7,7 +7,9 @@ Introductory paragraph (replace this with your text)
 Regex, short for regular expression, is a string that lets you create patterns to help locate, manage, and match text. 
 
 An example is this email matching regex.
-```(/[w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/)```
+```
+(/[w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/)
+```
 
 ## Table of Contents
 
@@ -25,7 +27,24 @@ An example is this email matching regex.
 
 ## Regex Components
 
+
+
 ### Anchors
+
+Anchors are characters within the regular expression that allow the user to match strings that begin with or ends with (or both) certain characters. 
+
+Examples of Anchors are as follows:
+
+* `^` - matches any string that start with the anterior word
+* `$` - matches a string that end with preceeding word before the character
+* Examples:
+
+```
+^Hello          matches any string starting with `Hello`
+World$          matches any string ending with `World`
+^Hello World$   matches exact string
+goodbye         matches any string that has the exact text `goodbye` in it
+```
 
 ### Quantifiers
 
