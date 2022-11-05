@@ -1,6 +1,6 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+In this Regex tutorial, we will be taking a look into what Regex or (regular expressions) are and how they work. Regex might seem intimidating at first, but just like any other language you'll learn, you can break everything down to make it easier to grasp and understand. 
 
 ## Summary
 
@@ -193,4 +193,6 @@ h(?=t)       matches a h only if is followed by t, but t will not be part of the
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Ethan DeMougin, Junior Developer at Butler Coding Bootcamp
+
+[GitHub Profile](https://github.com/EthanDeMougin)
