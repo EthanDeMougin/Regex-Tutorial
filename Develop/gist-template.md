@@ -27,8 +27,6 @@ An example is this email matching regex.
 
 ## Regex Components
 
-
-
 ### Anchors
 
 Anchors are characters within the regular expression that allow the user to match strings that begin with or ends with (or both) certain characters. 
@@ -47,6 +45,27 @@ goodbye         matches any string that has the exact text `goodbye` in it
 ```
 
 ### Quantifiers
+
+Qunatifiers are characters within the regular expression that specify how many instances a character, group, or character class must be represented in the input to be matched.
+
+Examples of Quanitifers are as follows:
+
+* `*` - matches a string that has the anterior followed by zero or more of the last character
+* `+` - matches a string that has the anterior followed by one or more of the last character
+* `?` - matches a string that has the atnerior follwoed by zero or one of the last character
+* `{}` -  matches a string that has the anterior followed by how ever many the number in the brackets of the last character in the string
+* `()*` - matches a string that has any anterior characters followed by zero or more copies of the string within the brackets
+* Examples:
+```
+xyz*        matches a string that has xy followed by zero or more z
+xyz+        matches a string that has xy followed by one or more z
+xyz?        matches a string that has xy followed by zero or one z
+xyz{2}      matches a string that has xy followed by 2 z
+xyz{2,}     matches a string that has xy followed by 2 or more z
+xyz{2,5}    matches a string that has xy followed by 2 up to 5 z
+x(yz)*      matches a string that has x followed by zero or more copies of the sequence yz
+x(yz){2,5}  matches a string that has x followed by 2 up to 5 copies of the sequence yz
+```
 
 ### OR Operator
 
@@ -80,6 +99,8 @@ Examples of Flags are as follows:
 ### Grouping and Capturing
 
 ### Bracket Expressions
+
+
 
 ### Greedy and Lazy Match
 
